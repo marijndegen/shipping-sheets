@@ -1,6 +1,6 @@
 {
   "name": "shipping-sheets",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "repository": "https://github.com/marijndegen/shipping-sheets.git",
   "author": "Marijn Degen <16215123+marijndegen@users.noreply.github.com>",
