@@ -1,9 +1,16 @@
 {
   "name": "shipping-sheets",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "repository": "https://github.com/marijndegen/shipping-sheets.git",
   "author": "Marijn Degen <16215123+marijndegen@users.noreply.github.com>",
   "license": "GPL-3.0",
-  "private": false
+  "private": false,
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "tsc"
+  }
 }
