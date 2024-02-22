@@ -58,7 +58,7 @@ export const toXlsxWithHeader = (
   options?: JSON2SheetOpts
 ): string => singleSheetXlsx(data, sheetName, options);
 
-export const toXlsxWithHeaderAndColumns = (
+export const toXlsxWithColumnsAndHeader = (
   data: DataType,
   sheetName: string,
   columns: string[],

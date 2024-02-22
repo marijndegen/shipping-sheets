@@ -25,7 +25,7 @@ export const csvStringWithHeader = (
   });
 };
 
-export const csvStringWithColumnsHeader = (
+export const csvStringWithColumnsAndHeader = (
   data: any,
   columns: string[],
   options?: Omit<Options, "columns" | "header">
