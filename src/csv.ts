@@ -1,10 +1,10 @@
 import { Options, stringify } from "csv-stringify/browser/esm/sync";
 
-export const csvString = (data: any, options?: Options): string => {
+export const toCsv = (data: any, options?: Options): string => {
   return stringify(data, options);
 };
 
-export const csvStringWithColumns = (
+export const toCsvWithColumns = (
   data: any,
   columns: string[],
   options?: Omit<Options, "columns">
@@ -15,7 +15,7 @@ export const csvStringWithColumns = (
   });
 };
 
-export const csvStringWithHeader = (
+export const toCsvWithHeader = (
   data: any,
   options?: Omit<Options, "header">
 ): string => {
@@ -25,7 +25,7 @@ export const csvStringWithHeader = (
   });
 };
 
-export const csvStringWithColumnsAndHeader = (
+export const toCsvWithColumnsAndHeader = (
   data: any,
   columns: string[],
   options?: Omit<Options, "columns" | "header">
