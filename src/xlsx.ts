@@ -3,7 +3,7 @@ import { JSON2SheetOpts, utils, write } from "xlsx";
 type DataType = any[];
 const optionsWithoutHeader = (options?: JSON2SheetOpts): JSON2SheetOpts => {
   return {
-    skipHeader: false,
+    skipHeader: true,
     ...(options || {}),
   };
 };
