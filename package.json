@@ -1,6 +1,6 @@
 {
   "name": "shipping-sheets",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "main": "dist/index.js",
   "repository": "https://github.com/marijndegen/shipping-sheets.git",
   "author": "Marijn Degen <16215123+marijndegen@users.noreply.github.com>",
@@ -11,13 +11,14 @@
     "typescript": "^5.3.3"
   },
   "scripts": {
-    "build": "rm -rf dist && tsc && cp -r src/* dist",
+    "build": "rm -rf dist && tsc",
     "prepublish": "yarn build"
   },
   "files": [
     "dist/*.js",
     "dist/*.d.ts",
-    "dist/*.js.map"
+    "dist/*.js.map",
+    "src"
   ],
   "dependencies": {
     "csv-stringify": "^6.4.5",
